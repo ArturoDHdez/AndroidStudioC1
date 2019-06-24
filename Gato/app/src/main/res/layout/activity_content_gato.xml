@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ContentGato">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Victorias"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="sans-serif-black"
+                    android:autoSizeTextType="uniform"/>
+
+                <TextView
+                    android:id="@+id/text_P1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Jugador 1: "
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_P2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="casual"
+                    android:text="Jugador 2: "
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/turne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turno:"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/Img_Turno"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ly1_fila"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ly2_fila"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_4"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border"  />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ly3_fila"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/btn_7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_8"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border" />
+
+        <ImageButton
+            android:id="@+id/btn_9"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:baselineAlignBottom="true"
+            android:background="@drawable/button_border"  />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Limpiar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Limpiar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="limpiarTablero"/>
+    <Button
+        android:id="@+id/btn_Terminar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Menú"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="regresarMenu"/>
+
+</LinearLayout>
